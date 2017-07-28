@@ -1,0 +1,5 @@
+libapache2-mod-authn-dovecot (0.2.3-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Kevin Locke <kevin@kevinlocke.name>  Fri, 28 Jul 2017 00:46:25 -0600

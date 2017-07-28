@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+export DH_VERBOSE = 1
+
+# enable hardening compiler options for security
+# see FEATURE AREAS in dpkg-buildflags(1)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# see ENVIRONMENT in dpkg-buildflags(1)
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,-z,defs
+
+
+%:
+	dh $@ --with apache2
+
+
+override_dh_auto_configure:
+	# Skip ./configure, which is not necessary
+
+
+override_dh_auto_install:
+	# Skip make install, which is not necessary

@@ -1,0 +1,19 @@
+Source: libapache2-mod-authn-dovecot
+Priority: optional
+Maintainer: Kevin Locke <kevin@kevinlocke.name>
+Build-Depends:
+ apache2-dev (>= 2.2.0),
+ debhelper (>= 10),
+ dh-apache2
+Standards-Version: 4.0.0
+Section: libs
+Homepage: https://github.com/bmanojlovic/mod_authn_dovecot
+Vcs-Browser: https://gitlab.com/kevinoid/libapache2-mod-authn-dovecot
+Vcs-Git: https://gitlab.com/kevinoid/libapache2-mod-authn-dovecot.git
+
+Package: libapache2-mod-authn-dovecot
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Dovecot authentication provider for Apache
+ mod_authn_dovecot allows Apache to authenticate users against
+ the Dovecot user database using a dovecot-auth client socket.

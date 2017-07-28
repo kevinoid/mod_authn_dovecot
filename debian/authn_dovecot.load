@@ -1,0 +1,1 @@
+LoadModule authn_dovecot_module /usr/lib/apache2/modules/mod_authn_dovecot.so
